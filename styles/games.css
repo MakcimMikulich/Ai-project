@@ -1,0 +1,127 @@
+.games {
+  margin-top: 100px;
+}
+.games .games__title {
+  display: flex;
+  flex-direction: column;
+}
+.games .games__title .title__note {
+  color: #ff7400;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.games .games__title .title__main {
+  color: #fff;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+@media (max-width: 768px) {
+  .games .games__title .title__main {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .games .games__title {
+    text-align: center;
+  }
+}
+.games .games__slides {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+.games .games__slides .slide {
+  display: flex;
+  flex-direction: column;
+  width: calc(33.33% - 16px);
+}
+.games .games__slides .slide .slide__img {
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.games .games__slides .slide .slide__img img {
+  width: 100%;
+}
+.games .games__slides .slide .slide__role {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.games .games__slides .slide .slide__role span {
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+.games .games__slides .slide .slide__role .role__items {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.06);
+}
+.games .games__slides .slide .slide__role .role__items .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 20px;
+  border-radius: 50px;
+  background: #ff7400;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 1280px) {
+  .games .games__slides .slide .slide__role {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.games .games__slides .slide .slide__title {
+  color: #fff;
+  margin-bottom: 16px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.games .games__slides .slide .slide__description {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+  text-overflow: ellipsis;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+}
+@media (max-width: 768px) {
+  .games .games__slides .slide .slide__description {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .games .games__slides .slide {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .games .games__slides .slide {
+    width: 90%;
+  }
+}
+@media (max-width: 476px) {
+  .games .games__slides .slide {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .games .games__slides {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=games.css.map */

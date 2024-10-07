@@ -1,0 +1,157 @@
+.vision {
+    margin-top: 100px;
+
+    .vision__wrapper {
+        display: flex;
+        gap: 48px;
+
+        .vision__left {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            min-width: 50%;
+            max-width: 50%;
+
+            .left__advantage {
+                display: flex;
+                gap: 24px;
+                padding: 24px;
+                align-items: center;
+                align-content: center;
+                background: rgba(94, 94, 94, 0.2);
+                border-radius: 50px;
+                z-index: 1;
+                backdrop-filter: blur(27px);
+                overflow: hidden;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+
+                    background: linear-gradient(
+                        90deg,
+                        #c02c30,
+                        #fbbb49,
+                        #b75af5,
+                        #6d78f2
+                    );
+                    border-radius: 50px;
+                    padding: 1px;
+                    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                        linear-gradient(#fff 0 0);
+                    -webkit-mask-composite: destination-out;
+                    mask-composite: exclude;
+                }
+
+                .advantage__img {
+                    min-width: 91px;
+                    min-height: 91px;
+                }
+
+                .advantage__name {
+                    color: #fff;
+                    font-family: "Dela Gothic One", sans-serif;
+                    font-size: 30px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    // white-space: nowrap;
+
+                    @media (max-width: 1024px) {
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: 22px;
+                    }
+
+                    @media (max-width: 476px) {
+                        font-size: 20px;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    flex-direction: column;
+                    padding: 30px 24px;
+                }
+            }
+            @media (max-width: 1024px) {
+                flex-direction: row;
+                min-width: initial;
+                max-width: initial;
+                gap: 20px;
+            }
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        .vision__right {
+            display: flex;
+            flex-direction: column;
+
+            .vision__title {
+                text-align: start;
+                margin-bottom: 40px;
+
+                @media (max-width: 1024px) {
+                    display: none;
+                }
+            }
+
+            .vision__description {
+                color: rgba(255, 255, 255, 0.7);
+                font-family: "Inter", sans-serif;
+                font-size: 30px;
+                line-height: 40px;
+
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+
+    .vision__title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &.upper {
+            display: none;
+            margin-bottom: 40px;
+
+            @media (max-width: 1024px) {
+                display: flex;
+            }
+        }
+
+        .vision__note {
+            color: #ff7400;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .vision__main {
+            color: #fff;
+            font-family: "Dela Gothic One", sans-serif;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 100%;
+
+            @media (max-width: 476px) {
+                font-size: 48px;
+            }
+        }
+    }
+}

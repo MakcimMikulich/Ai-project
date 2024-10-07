@@ -1,0 +1,209 @@
+.welcome {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .welcome__note {
+        text-align: center;
+        position: relative;
+        display: flex;
+        padding: 24px 26px;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        flex-wrap: wrap;
+
+        overflow: hidden;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.1);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(
+                90deg,
+                #c02c30 0%,
+                #fbbb49 28.5%,
+                #b75af5 63%,
+                #6d78f2 100%
+            );
+            z-index: -1;
+            border-radius: 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            background-color: #1b1c1d;
+            z-index: -1;
+            border-radius: 50px;
+        }
+
+        span {
+            color: #d9d9d9;
+            font-size: 24px;
+            line-height: 150%;
+            font-weight: 500;
+            font-family: "Inter", sans-serif;
+
+            @media (max-width: 768px) {
+                white-space: wrap;
+            }
+        }
+
+        .human {
+            white-space: nowrap;
+
+            img {
+                width: 20px;
+                height: 27px;
+            }
+
+            .pink {
+                background: linear-gradient(
+                    to bottom,
+                    #ff00a8 40%,
+                    #ffd600 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .stars {
+            white-space: nowrap;
+
+            img {
+                width: 24px;
+                height: 27px;
+            }
+
+            .yellow {
+                background: linear-gradient(180deg, #ffe500 40%, #00ffb2 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .grey {
+            background: linear-gradient(180deg, #ffffff4d 30%, #ecf9ff4d 30%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @media (max-width: 476px) {
+            padding: 20px 19px;
+        }
+    }
+
+    .welcome__title {
+        margin-top: 32px;
+        text-align: center;
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 110px;
+        line-height: 107%;
+        white-space: nowrap;
+
+        .gradient {
+            background: var(
+                --main-grad-2,
+                linear-gradient(
+                    90deg,
+                    #c02c30 0%,
+                    #fbbb49 28.5%,
+                    #b75af5 63%,
+                    #6d78f2 100%
+                )
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .white {
+            color: #ffffff;
+            @media (max-width: 476px) {
+                word-break: break-word;
+            }
+        }
+
+        @media (max-width: 1540px) {
+            font-size: 90px;
+        }
+
+        @media (max-width: 1280px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 768px) {
+            white-space: wrap;
+        }
+    }
+
+    .welcome__description {
+        margin-top: 24px;
+
+        color: #fff;
+        opacity: 0.8;
+        letter-spacing: 1.32px;
+
+        font-family: "Inter", sans-serif;
+        font-size: 30px;
+        margin-bottom: 40px;
+
+        @media (max-width: 1280px) {
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    .welcome__button {
+        display: flex;
+        padding: 30px 80px;
+        justify-content: center;
+        align-items: center;
+        line-height: normal;
+        white-space: nowrap;
+        gap: 10px;
+
+        color: #fff;
+
+        font-family: "Inter", sans-serif;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 100px;
+        background: linear-gradient(#ff7400, #ff7400) padding-box,
+            rgba(255, 177, 112, 0.39) border-box;
+        border: 5px solid transparent;
+        border-color: transparent;
+        box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+        transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+
+        &:hover {
+            border-color: rgba(255, 177, 112, 0.39);
+            background: linear-gradient(#f6a800, #f6a800) padding-box,
+                rgba(255, 177, 112, 0.39) border-box;
+            box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+        }
+
+        @media (max-width: 768px) {
+            padding: 20px 50px;
+        }
+    }
+}

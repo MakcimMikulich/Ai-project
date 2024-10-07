@@ -1,0 +1,42 @@
+.cards {
+    margin-top: 107px;
+
+    .cards__content {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+
+        @media (max-width: 1280px) {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .table_card {
+        display: none;
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: 1280px) {
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/welcome.css" />
+        <link rel="stylesheet" href="./styles/work.css" />
+        <link rel="stylesheet" href="./styles/cards.css" />
+        <link rel="stylesheet" href="./styles/games.css" />
+        <link rel="stylesheet" href="./styles/vision.css" />
+        <link rel="stylesheet" href="./styles/footer.css" />
+        <link rel="stylesheet" href="./styles/modal.css" />
+    </head>
+    <body class="lock">
+        <div class="app">
+            <div class="fixed__header container active">
+                <div class="content">
+                    <a href="#" class="wrapper__logo">
+                        <img src="./assets/logo.svg" alt="logo" />
+                    </a>
+                    <div id="secondBtn" class="wrapper__icon">
+                        <div class="menu__icon">
+                            <img
+                                width="24"
+                                height="24"
+                                src="./assets/menu_icon.svg"
+                                alt="icon"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="header container">
+                <a href="#" class="wrapper__logo">
+                    <img src="./assets/logo.svg" alt="logo" />
+                </a>
+                <div class="header__left">
+                    <div class="header__menu menu">
+                        <nav id="menu__body" class="menu__body">
+                            <div class="header__menu__mobile">
+                                <a href="#" class="mobile__logo">
+                                    <img
+                                        src="./assets/logo_burger.svg"
+                                        alt="logo"
+                                    />
+                                </a>
+                                <div id="wrapper__close" class="wrapper__close">
+                                    <svg
+                                        width="26"
+                                        height="26"
+                                        viewBox="0 0 26 26"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 0.5L25.5 25"
+                                            stroke="currenColor"
+                                        />
+                                        <path
+                                            d="M25.5 0.5L1 25"
+                                            stroke="currenColor"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="header__nav">
+                                <li class="nav__item">
+                                    <a class="nav__link anchors" href="#work"
+                                        >What We Do</a
+                                    >
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link anchors" href="#cards"
+                                        >How We Do It</a
+                                    >
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link anchors" href="#games"
+                                        >Games Showcase</a
+                                    >
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link anchors" href="#vision"
+                                        >Why AI-First?</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="footer__menu__mobile">
+                                <div class="mobile__email">
+                                    <a
+                                        href="mailto:info@synthigames.com"
+                                        class="email__link"
+                                    >
+                                        info@synthigames.com
+                                    </a>
+                                    <span>2024 © All Right Reserved</span>
+                                </div>
+                                <button class="mobile__button">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </nav>
+                        <div id="wrapper__icon" class="wrapper__icon">
+                            <div class="menu__icon">
+                                <img
+                                    width="24"
+                                    height="24"
+                                    src="./assets/menu_icon.svg"
+                                    alt="icon"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="welcome container">
+                    <div class="welcome__note">
+                        <span class="grey">Generated</span>&nbsp;
+                        <span>by</span>&nbsp;
+                        <p class="human">
+                            <span class="pink">Human</span>&nbsp;
+                            <img
+                                width="20"
+                                height="27"
+                                class="human"
+                                src="./assets/human.png"
+                                alt="human"
+                            />
+                        </p>
+                        &nbsp; <span>with</span>&nbsp;
+                        <p class="stars">
+                            <span class="yellow">AI</span>&nbsp;
+                            <img
+                                width="24"
+                                height="27"
+                                src="./assets/ai_stars.png"
+                                alt="stars"
+                            />
+                        </p>
+                    </div>
+                    <div class="welcome__title">
+                        <p class="gradient">AI-First Mobile Game</p>
+                        <p class="white">Development Studio</p>
+                    </div>
+                    <div class="welcome__description">
+                        Revolutionizing game development with AI-driven
+                        creativity and trend adaptation
+                    </div>
+                    <button class="welcome__button button">Contact Us</button>
+                </section>
+                <section id="work" class="work container">
+                    <div class="work__wrapper">
+                        <div class="work__title">
+                            <p class="work__title__note">What We Do</p>
+                            <p class="work__title__main">
+                                Game Development Evolved
+                            </p>
+                        </div>
+                        <div class="work__content">
+                            <div>
+                                <img
+                                    width="1400"
+                                    height="657.5"
+                                    src="./assets/work_content.png"
+                                    alt="content"
+                                />
+                            </div>
+                            <div class="work__content__steps">
+                                <div class="step">
+                                    <div>
+                                        <div class="step__number">step #1</div>
+                                    </div>
+                                    <div class="step__title">
+                                        AI-Driven Content Creation
+                                    </div>
+                                    <div class="step__description">
+                                        From generating game assets like
+                                        characters, environments, and animations
+                                        to designing entire game levels, AI
+                                        tools work alongside our developers to
+                                        rapidly produce high-quality content.
+                                    </div>
+                                </div>
+                                <div class="step">
+                                    <div>
+                                        <div class="step__number">step #2</div>
+                                    </div>
+                                    <div class="step__title">
+                                        Trend Adaptation
+                                    </div>
+                                    <div class="step__description">
+                                        Staying relevant in the fast-paced
+                                        gaming world is key, and our AI-driven
+                                        trend adaptation system ensures we stay
+                                        ahead of the curve.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="cards" class="cards container">
+                    <div class="table_card">
+                        <div>
+                            <img
+                                width="960"
+                                height="561"
+                                src="./assets/moblie_card.png"
+                                alt="card"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                width="728"
+                                height="529"
+                                src="./assets/mobile_card_d.png"
+                                alt="card"
+                            />
+                        </div>
+                    </div>
+                    <div class="cards__content desktop">
+                        <div class="card">
+                            <img
+                                width="491"
+                                height="552"
+                                src="./assets/card_1.png"
+                                alt="card"
+                            />
+                        </div>
+                        <div class="card">
+                            <img
+                                width="619"
+                                height="552"
+                                src="./assets/card_2.png"
+                                alt="card"
+                            />
+                        </div>
+                        <div class="card">
+                            <img
+                                width="362"
+                                height="552"
+                                src="./assets/card_3.png"
+                                alt="card"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section id="games" class="games container">
+                    <div class="games__title">
+                        <p class="title__note">Games Showcase</p>
+                        <p class="title__main">Our Games</p>
+                    </div>
+                    <div class="games__slides">
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="./assets/slide_1.png" alt="slide" />
+                            </div>
+                            <div class="slide__role">
+                                <span>AI Role:</span>
+                                <div class="role__items">
+                                    <div class="item">content</div>
+                                    <div class="item">graphic</div>
+                                </div>
+                            </div>
+                            <div class="slide__title">crosswords</div>
+                            <div class="slide__description">
+                                Crosswords offer the perfect combination of
+                                relaxation and challenge
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="./assets/slide_2.png" alt="slide" />
+                            </div>
+                            <div class="slide__role">
+                                <span>AI Role:</span>
+                                <div class="role__items">
+                                    <div class="item">locations</div>
+                                    <div class="item">scenarios</div>
+                                </div>
+                            </div>
+                            <div class="slide__title">Rogue-like</div>
+                            <div class="slide__description">
+                                Each entry into the game making each session
+                                unpredictable.
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide__img">
+                                <img src="./assets/slide_3.png" alt="slide" />
+                            </div>
+                            <div class="slide__role">
+                                <span>AI Role:</span>
+                                <div class="role__items">
+                                    <div class="item">settings</div>
+                                    <div class="item">feedback</div>
+                                </div>
+                            </div>
+                            <div class="slide__title">Educational games</div>
+                            <div class="slide__description">
+                                Provide feedback, teach the player, and offer
+                                new challenges.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="vision" class="vision container">
+                    <div class="vision__title upper">
+                        <p class="vision__note">Why AI-First?</p>
+                        <p class="vision__main">Our Vision</p>
+                    </div>
+                    <div class="vision__wrapper">
+                        <div class="vision__left">
+                            <div class="left__advantage">
+                                <div class="advantage__img">
+                                    <img
+                                        width="91"
+                                        height="91"
+                                        src="./assets/adv_1.png"
+                                        alt="adv"
+                                    />
+                                </div>
+                                <div class="advantage__name">
+                                    Increased Efficiency
+                                </div>
+                            </div>
+                            <div class="left__advantage">
+                                <div class="advantage__img">
+                                    <img
+                                        width="91"
+                                        height="91"
+                                        src="./assets/adv_2.png"
+                                        alt="adv"
+                                    />
+                                </div>
+                                <div class="advantage__name">
+                                    Adaptive & Engaging Content
+                                </div>
+                            </div>
+                            <div class="left__advantage">
+                                <div class="advantage__img">
+                                    <img
+                                        width="91"
+                                        height="91"
+                                        src="./assets/adv_3.png"
+                                        alt="adv"
+                                    />
+                                </div>
+                                <div class="advantage__name">
+                                    Future-Ready Innovation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vision__right">
+                            <div class="vision__title">
+                                <p class="vision__note">Why AI-First?</p>
+                                <p class="vision__main">Our Vision</p>
+                            </div>
+                            <div class="vision__description">
+                                At our core, we believe that AI is the future of
+                                game development, and our AI-first approach
+                                reflects that vision. By integrating AI into
+                                every step of the creative process, we achieve
+                                greater efficiency, more engaging experiences,
+                                and future-proof innovation.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="banner container">
+                    <div class="banner__slogan">
+                        <p class="slogan__note">GET IN TOUCH</p>
+                        <p class="slogan__title">Let’s innovate together</p>
+                    </div>
+                    <button class="banner__button">Contact Us</button>
+                </div>
+
+                <div class="footer__info container">
+                    <a href="#" class="info__logo">
+                        <img src="./assets/logo_footer.svg" alt="logo" />
+                    </a>
+                    <div class="footer__info__wrapper">
+                        <a
+                            href="mailto:info@synthigames.com"
+                            class="info__email"
+                            >info@synthigames.com</a
+                        >
+                        <div class="info__logo">
+                            <img src="./assets/logo_footer.svg" alt="logo" />
+                        </div>
+                        <span>2024 © All Right Reserved</span>
+                    </div>
+                </div>
+            </footer>
+            <div class="modal">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                        >
+                            <path d="M1 1L29 29" stroke="currentColor" />
+                            <path d="M29 1L1 29" stroke="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="modal__header">
+                        <p class="header__title">Get in Touch</p>
+                        <p class="header__description">
+                            Leave your details and we will contact you to
+                            discussing how <span>synthigames</span> can help you
+                        </p>
+                    </div>
+                    <form
+                        id="contactForm"
+                        method="POST"
+                        action="./js/send_email.php"
+                        class="modal__form"
+                    >
+                        <div class="modal__inputs">
+                            <input
+                                class="form__name"
+                                type="text"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            />
+                            <input
+                                class="form__email"
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            />
+                            <textarea
+                                class="form__message"
+                                name="message"
+                                placeholder="Message"
+                                rows="40"
+                                required
+                            ></textarea>
+                        </div>
+                        <div class="modal__footer">
+                            <button
+                                type="submit"
+                                id="submitBtn"
+                                class="footer__btn"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="js/menu.js"></script>
+        <script type="module" src="js/validate.js"></script>
+    </body>
+</html>

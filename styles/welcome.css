@@ -1,0 +1,178 @@
+.welcome {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.welcome .welcome__note {
+  text-align: center;
+  position: relative;
+  display: flex;
+  padding: 24px 26px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.welcome .welcome__note::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(90deg, #c02c30 0%, #fbbb49 28.5%, #b75af5 63%, #6d78f2 100%);
+  z-index: -1;
+  border-radius: 10px;
+}
+.welcome .welcome__note::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #1b1c1d;
+  z-index: -1;
+  border-radius: 50px;
+}
+.welcome .welcome__note span {
+  color: #d9d9d9;
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 768px) {
+  .welcome .welcome__note span {
+    white-space: wrap;
+  }
+}
+.welcome .welcome__note .human {
+  white-space: nowrap;
+}
+.welcome .welcome__note .human img {
+  width: 20px;
+  height: 27px;
+}
+.welcome .welcome__note .human .pink {
+  background: linear-gradient(to bottom, #ff00a8 40%, #ffd600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome .welcome__note .stars {
+  white-space: nowrap;
+}
+.welcome .welcome__note .stars img {
+  width: 24px;
+  height: 27px;
+}
+.welcome .welcome__note .stars .yellow {
+  background: linear-gradient(180deg, #ffe500 40%, #00ffb2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome .welcome__note .grey {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3019607843) 30%, rgba(236, 249, 255, 0.3019607843) 30%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 476px) {
+  .welcome .welcome__note {
+    padding: 20px 19px;
+  }
+}
+.welcome .welcome__title {
+  margin-top: 32px;
+  text-align: center;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 110px;
+  line-height: 107%;
+  white-space: nowrap;
+}
+.welcome .welcome__title .gradient {
+  background: var(--main-grad-2, linear-gradient(90deg, #c02c30 0%, #fbbb49 28.5%, #b75af5 63%, #6d78f2 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome .welcome__title .white {
+  color: #ffffff;
+}
+@media (max-width: 476px) {
+  .welcome .welcome__title .white {
+    word-break: break-word;
+  }
+}
+@media (max-width: 1540px) {
+  .welcome .welcome__title {
+    font-size: 90px;
+  }
+}
+@media (max-width: 1280px) {
+  .welcome .welcome__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .welcome .welcome__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .welcome .welcome__title {
+    white-space: wrap;
+  }
+}
+.welcome .welcome__description {
+  margin-top: 24px;
+  color: #fff;
+  opacity: 0.8;
+  letter-spacing: 1.32px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  .welcome .welcome__description {
+    opacity: 0.5;
+  }
+}
+@media (max-width: 768px) {
+  .welcome .welcome__description {
+    font-size: 20px;
+  }
+}
+.welcome .welcome__button {
+  display: flex;
+  padding: 30px 80px;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  white-space: nowrap;
+  gap: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 100px;
+  background: linear-gradient(#ff7400, #ff7400) padding-box, rgba(255, 177, 112, 0.39) border-box;
+  border: 5px solid transparent;
+  border-color: transparent;
+  box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.welcome .welcome__button:hover {
+  border-color: rgba(255, 177, 112, 0.39);
+  background: linear-gradient(#f6a800, #f6a800) padding-box, rgba(255, 177, 112, 0.39) border-box;
+  box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+}
+@media (max-width: 768px) {
+  .welcome .welcome__button {
+    padding: 20px 50px;
+  }
+}/*# sourceMappingURL=welcome.css.map */

@@ -1,0 +1,189 @@
+.footer {
+    margin-top: 210px;
+    background: #ff7400;
+    padding: 0 20px;
+    padding-bottom: 60px;
+
+    .banner {
+        position: relative;
+        bottom: 114px;
+        display: flex;
+        padding: 60px 76px;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1580px;
+        gap: 30px;
+
+        border-radius: 174px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        background: linear-gradient(
+            89deg,
+            #5c1db4 -5.74%,
+            #b75af5 40.4%,
+            #fbbb49 83.43%,
+            #c02c30 118.97%
+        );
+        backdrop-filter: blur(27.25px);
+
+        .banner__slogan {
+            display: flex;
+            flex-direction: column;
+
+            .slogan__note {
+                color: #ff7400;
+                font-family: "Inter", sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .slogan__title {
+                color: #fff;
+                font-family: "Dela Gothic One", sans-serif;
+                font-size: 64px;
+                line-height: 100%;
+
+                @media (max-width: 1280px) {
+                    font-size: 48px;
+                }
+                @media (max-width: 992px) {
+                    white-space: nowrap;
+                }
+                @media (max-width: 768px) {
+                    white-space: initial;
+                }
+            }
+        }
+
+        .banner__button {
+            display: flex;
+            padding: 30px 80px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            white-space: nowrap;
+
+            color: #fff;
+
+            text-align: center;
+            font-family: "Inter", sans-serif;
+            font-size: 30px;
+
+            border-radius: 100px;
+            border: 5px solid rgba(183, 90, 245, 0.39);
+            background: #6c27bf;
+            box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+            transition: background 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                background: #5b19a9;
+            }
+
+            @media (max-width: 768px) {
+                padding: 20px 50px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            border-radius: 50px;
+            flex-direction: column;
+            text-align: center;
+            padding: 30px;
+            bottom: 136px;
+        }
+        @media (max-width: 768px) {
+            bottom: 160px;
+        }
+    }
+
+    .footer__info {
+        margin-top: -60px;
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+
+        &.container {
+            @media (max-width: 992px) {
+                padding: 0px;
+            }
+        }
+
+        .footer__info__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: "Inter", sans-serif;
+            gap: 10px;
+            width: 100%;
+
+            .info__email {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 100%;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: #c5c5c5;
+                }
+
+                // @media (max-width: 768px) {
+                //     font-weight: 600;
+                // }
+            }
+
+            .info__logo {
+                display: flex;
+
+                @media (max-width: 992px) {
+                    display: none;
+                }
+            }
+
+            span {
+                color: var(--White, #fff);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+                opacity: 0.5;
+            }
+
+            @media (max-width: 992px) {
+                flex-direction: column;
+                align-items: flex-start;
+                width: initial;
+            }
+            @media (max-width: 476px) {
+                align-items: center;
+            }
+        }
+
+        .info__logo {
+            display: none;
+            align-items: center;
+
+            @media (max-width: 992px) {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 992px) {
+            margin-top: -105px;
+        }
+
+        @media (max-width: 476px) {
+            flex-direction: column;
+            align-items: center;
+            margin-top: -125px;
+        }
+    }
+    @media (max-width: 992px) {
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 476px) {
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
