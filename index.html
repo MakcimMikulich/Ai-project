@@ -411,7 +411,7 @@
                 </div>
             </footer>
             <div id="modal" class="modal">
-                <div class="modal__container">
+                <div id="base" class="modal__container base">
                     <div class="modal__close">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -470,6 +470,38 @@
                             </button>
                         </div>
                     </form>
+                </div>
+                <div id="success" class="modal__container success">
+                    <div class="modal__close">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                        >
+                            <path d="M1 1L29 29" stroke="currentColor" />
+                            <path d="M29 1L1 29" stroke="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <div class="content__img">
+                            <img src="./assets/message.png" alt="message" />
+                        </div>
+                        <div class="content__text">
+                            <div class="text__title">
+                                Your application has been successfully accepted
+                            </div>
+                            <div class="content__description">
+                                Our team is currently reviewing your
+                                information, and one of our managers will be in
+                                touch with you within the next 24 hours
+                            </div>
+                        </div>
+                        <div>
+                            <button class="content__button ok">Ok</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

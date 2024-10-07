@@ -31,6 +31,9 @@
   border-radius: 50px;
   background: #fff;
 }
+.modal .modal__container.unactive {
+  display: none;
+}
 .modal .modal__container::-webkit-scrollbar {
   display: none;
 }
@@ -162,4 +165,63 @@
   .modal .modal__container {
     padding: 30px 20px;
   }
+}
+
+.modal .modal__container.success {
+  display: none;
+}
+.modal .modal__container.success.active {
+  display: flex;
+}
+.modal .modal__container.success .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal .modal__container.success .content .content__img {
+  max-width: 388px;
+  width: 100%;
+  height: 316px;
+}
+.modal .modal__container.success .content .content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+.modal .modal__container.success .content .content__text .text__title {
+  color: #000;
+  text-align: center;
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 40px;
+  line-height: 100%;
+}
+.modal .modal__container.success .content .content__text .content__description {
+  color: var(--Grey, #a6a6a6);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+}
+.modal .modal__container.success .content .content__button {
+  margin: 0 auto;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: #ff7400;
+  box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.2s;
+}
+.modal .modal__container.success .content .content__button:hover {
+  background: #f6a800;
 }/*# sourceMappingURL=modal.css.map */

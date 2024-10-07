@@ -29,6 +29,10 @@
         overflow: auto;
         scrollbar-width: none;
 
+        &.unactive {
+            display: none;
+        }
+
         &::-webkit-scrollbar {
             display: none;
         }
@@ -172,6 +176,79 @@
 
         @media (max-width: 476px) {
             padding: 30px 20px;
+        }
+    }
+}
+
+.modal {
+    .modal__container {
+        &.success {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .content__img {
+                    max-width: 388px;
+                    width: 100%;
+                    height: 316px;
+                }
+
+                .content__text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    margin-bottom: 35px;
+
+                    .text__title {
+                        color: #000;
+                        text-align: center;
+                        font-family: "Dela Gothic One", sans-serif;
+                        font-size: 40px;
+                        line-height: 100%;
+                    }
+
+                    .content__description {
+                        color: var(--Grey, #a6a6a6);
+                        text-align: center;
+                        font-family: "Inter", sans-serif;
+                        font-size: 20px;
+                        line-height: 140%;
+                    }
+                }
+
+                .content__button {
+                    margin: 0 auto;
+                    display: flex;
+                    padding: 20px 40px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    border-radius: 100px;
+                    background: #ff7400;
+                    box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+
+                    color: #fff;
+
+                    text-align: center;
+                    font-family: "Inter", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    transition: background 0.2s;
+
+                    &:hover {
+                        background: #f6a800;
+                    }
+                }
+            }
         }
     }
 }

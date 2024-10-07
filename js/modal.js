@@ -1,9 +1,10 @@
+import { restartModal } from "./sendData.js";
+
 const modal = document.getElementById("modal");
 const buttons = document.querySelectorAll(".open__modal");
-const btnClose = document.querySelector(".modal__close");
+const btnsClose = document.querySelectorAll(".modal__close");
 const container = document.querySelector(".modal__container");
-
-console.log(btnClose);
+const ok = document.querySelector(".ok");
 
 function openModal() {
     modal.classList.add("active");
@@ -17,7 +18,16 @@ function closeModal() {
 buttons.forEach((button) => {
     button.addEventListener("click", openModal);
 });
-btnClose.addEventListener("click", closeModal);
+
+btnsClose.forEach((btn) => {
+    btn.addEventListener("click", closeModal);
+    restartModal();
+});
+
+ok.addEventListener("click", () => {
+    closeModal();
+    restartModal();
+});
 
 document.addEventListener("click", function (event) {
     if (
