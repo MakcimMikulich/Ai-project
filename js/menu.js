@@ -4,6 +4,7 @@ const closeBtn = document.getElementById("wrapper__close");
 const menu = document.querySelector(".menu__body");
 const header = document.querySelector(".header");
 const fixedHeader = document.querySelector(".fixed__header");
+const container = document.querySelector(".modal__container");
 
 function openBurger() {
     menu.classList.add("active");
@@ -11,8 +12,10 @@ function openBurger() {
 }
 
 function closeBurger() {
-    menu.classList.remove("active");
-    document.body.classList.remove("lock");
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+        document.body.classList.remove("lock");
+    }
 }
 
 const anchors = document.querySelectorAll(".anchors");
@@ -39,7 +42,11 @@ burger.addEventListener("click", openBurger);
 closeBtn.addEventListener("click", closeBurger);
 
 document.addEventListener("click", function (event) {
-    if (!header.contains(event.target) && !fixedHeader.contains(event.target)) {
+    if (
+        !container.contains(event.target) &&
+        !header.contains(event.target) &&
+        !fixedHeader.contains(event.target)
+    ) {
         closeBurger();
     }
 });

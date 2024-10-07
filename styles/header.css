@@ -267,6 +267,7 @@
   padding-top: 20px;
   z-index: -1;
   opacity: 0;
+  display: none;
 }
 .fixed__header .content {
   display: flex;
@@ -299,6 +300,11 @@
 .fixed__header.active {
   z-index: 2;
   opacity: 1;
+}
+@media (max-width: 768px) {
+  .fixed__header {
+    display: block;
+  }
 }
 
 .wrapper__icon {

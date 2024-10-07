@@ -1,7 +1,3 @@
-import sendData from "./sendData.js";
-
-console.log(sendData);
-
 // Получаем ссылку на кнопку отправки
 const submitBtn = document.getElementById("submitBtn");
 

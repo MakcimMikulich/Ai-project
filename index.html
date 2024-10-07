@@ -20,8 +20,9 @@
         <link rel="stylesheet" href="./styles/vision.css" />
         <link rel="stylesheet" href="./styles/footer.css" />
         <link rel="stylesheet" href="./styles/modal.css" />
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     </head>
-    <body class="lock">
+    <body>
         <div class="app">
             <div class="fixed__header container active">
                 <div class="content">
@@ -105,7 +106,7 @@
                                     </a>
                                     <span>2024 © All Right Reserved</span>
                                 </div>
-                                <button class="mobile__button">
+                                <button class="mobile__button open__modal">
                                     Contact Us
                                 </button>
                             </div>
@@ -157,7 +158,9 @@
                         Revolutionizing game development with AI-driven
                         creativity and trend adaptation
                     </div>
-                    <button class="welcome__button button">Contact Us</button>
+                    <button class="welcome__button button open__modal">
+                        Contact Us
+                    </button>
                 </section>
                 <section id="work" class="work container">
                     <div class="work__wrapper">
@@ -385,7 +388,9 @@
                         <p class="slogan__note">GET IN TOUCH</p>
                         <p class="slogan__title">Let’s innovate together</p>
                     </div>
-                    <button class="banner__button">Contact Us</button>
+                    <button class="banner__button open__modal">
+                        Contact Us
+                    </button>
                 </div>
 
                 <div class="footer__info container">
@@ -405,7 +410,7 @@
                     </div>
                 </div>
             </footer>
-            <div class="modal">
+            <div id="modal" class="modal">
                 <div class="modal__container">
                     <div class="modal__close">
                         <svg
@@ -470,5 +475,7 @@
         </div>
         <script type="module" src="js/menu.js"></script>
         <script type="module" src="js/validate.js"></script>
+        <script type="module" src="./js/sendData.js"></script>
+        <script type="module" src="./js/modal.js"></script>
     </body>
 </html>
