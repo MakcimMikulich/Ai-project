@@ -25,6 +25,11 @@
     font-size: 48px;
   }
 }
+@media (max-width: 476px) {
+  .games .games__title .title__main {
+    font-size: 32px;
+  }
+}
 @media (max-width: 768px) {
   .games .games__title {
     text-align: center;
