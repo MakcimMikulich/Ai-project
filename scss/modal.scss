@@ -27,6 +27,11 @@
         gap: 40px;
         margin: auto;
         overflow: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         border-radius: 50px;
         background: #fff;

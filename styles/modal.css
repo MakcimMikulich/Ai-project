@@ -27,8 +27,12 @@
   gap: 40px;
   margin: auto;
   overflow: auto;
+  scrollbar-width: none;
   border-radius: 50px;
   background: #fff;
+}
+.modal .modal__container::-webkit-scrollbar {
+  display: none;
 }
 .modal .modal__container .modal__header {
   display: flex;
