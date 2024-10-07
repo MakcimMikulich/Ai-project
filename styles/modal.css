@@ -17,6 +17,7 @@
   opacity: 1;
 }
 .modal .modal__container {
+  max-height: 810px;
   height: 100%;
   position: relative;
   display: flex;
