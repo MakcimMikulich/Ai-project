@@ -24,7 +24,8 @@ html {
   max-width: 100vw;
   height: 100%;
   overflow: hidden;
-  background: #000;
+  background: url("../assets/bg.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .main {
