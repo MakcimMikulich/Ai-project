@@ -128,6 +128,11 @@
     white-space: wrap;
   }
 }
+@media (max-width: 476px) {
+  .welcome .welcome__title {
+    font-size: 32px;
+  }
+}
 .welcome .welcome__description {
   margin-top: 24px;
   color: #fff;

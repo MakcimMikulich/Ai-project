@@ -52,7 +52,7 @@ document.addEventListener("click", function (event) {
 });
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 104) {
+    if (window.scrollY > 144) {
         fixedHeader.classList.add("active"); // Добавляем класс, если скролл больше 80px
     } else {
         fixedHeader.classList.remove("active"); // Удаляем класс, если вернулись к началу

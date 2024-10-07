@@ -151,6 +151,9 @@
         @media (max-width: 768px) {
             white-space: wrap;
         }
+        @media (max-width: 476px) {
+            font-size: 32px;
+        }
     }
 
     .welcome__description {
