@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .policy .policy__header {
   width: 100%;
   display: flex;
@@ -12,8 +13,28 @@
   font-size: 110px;
   font-style: normal;
   font-weight: 400;
-  line-height: 118px;
+  line-height: 100%;
   margin-bottom: 40px;
+  word-wrap: break-word; /* Разрешает перенос слов */
+  word-break: break-word; /* Подстраховка для старых браузеров */
+  -webkit-hyphens: auto;
+          hyphens: auto; /* Добавляет переносы, если доступно */
+  overflow-wrap: break-word;
+}
+@media (max-width: 1280px) {
+  .policy .policy__header h2 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .policy .policy__header h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 476px) {
+  .policy .policy__header h2 {
+    font-size: 32px;
+  }
 }
 @media (max-width: 768px) {
   .policy .policy__header {
@@ -31,7 +52,7 @@
 }
 .policy h4 {
   color: #fff;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
@@ -51,6 +72,10 @@
 .policy p span {
   font-size: 30px;
   font-weight: 700;
+}
+.policy p a {
+  color: inherit;
+  text-decoration: underline;
 }
 .policy ul {
   color: #fff;
@@ -124,4 +149,83 @@
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 30px 55px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 100px;
+  border: 5px solid rgba(255, 177, 112, 0.39);
+  background: #ff7400;
+  box-shadow: 0px 0px 48.8px 14px rgba(255, 157, 0, 0.16);
+  align-items: center;
+  transition: background 0.2s ease-in-out;
+}
+.dropdown-button.active {
+  background-color: #9f4800;
+}
+.dropdown-button.active svg {
+  transform: rotate(180deg);
+}
+.dropdown-button svg {
+  transition: transform 0.2s ease-in-out;
+}
+.dropdown-button span {
+  margin-right: 60px;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .dropdown-button {
+    padding: 20px 35px;
+  }
+  .dropdown-button span {
+    margin-right: 30px;
+  }
+}
+
+.dropdown-button:hover {
+  background-color: #9f4800;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  width: 70%;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  display: none; /* Скрыто по умолчанию */
+  opacity: 0; /* Начальная прозрачность */
+  transform-origin: top;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
 }/*# sourceMappingURL=policy.css.map */

@@ -24,7 +24,7 @@ html {
   max-width: 100vw;
   height: 100%;
   overflow: hidden;
-  background: url("../assets/bg.jpg") center no-repeat;
+  background: url("../assets/bg.webp") center no-repeat;
   background-size: cover;
 }
 .app.black-bg {
